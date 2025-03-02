@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約系統</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>預約系統</h1>
+    <nav>
+        <a href="#services">服務</a>
+        <a href="#about">關於我們</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>預約您的服務</h2>
+    <form id="bookingForm">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">電子郵件:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="service">選擇服務:</label>
+        <select id="service" name="service" required>
+            <option value="service1">shampoo & dry</option>
+            <option value="service2">cut & shampoo & dry</option>
+        </select><br><br>
+
+        <label for="date">選擇日期:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">選擇時間:</label>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <button type="submit">提交預約</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2025 預約系統. 版權所有.</p>
+</footer>
+
+</body>
+</html>
